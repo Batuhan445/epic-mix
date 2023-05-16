@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div>
+            <img src="./img-icon/disc.png" class="header-image" alt="disc">
+        </div>
+        <div>
+            <h1 class="header-text">Epic Mix</h1>
+        </div>
+    </div>
+
+    <div class="header-songs">
+        <p>10 great songs and more!</p>
+    </div>
+
+
+    <div class="list">
+        <button id="listbutton" onclick="showlist()">show me!</button>
+        
+        <div id="listsongs">
+
+            <div class="input-container">
+                <input id="inputsongname" class="input" type="text" placeholder="Add song name">
+                <input id="inputlink" class="input" type="text" placeholder="Add YouTube song link">
+                <button id="sendbutton" class="addsongbutton" onclick="addsong()">Add Song</button>             
+            </div>
+
+            <div>
+                <ul id="list-ul">
+                    <li id="list-li">
+                        <button class="deletesong" id="deletesong" onclick="deletesong(` + i + `)">Delete</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="index.js"></script>
+
+
+</html>
